@@ -43,7 +43,7 @@ function Header() {
         <div className={styles["navMenu"]}>
           <a>
             <Link
-              to="/Portfolio"
+              to="/portfolio"
               style={{ color: "black", textDecoration: "none" }}
             >
               <span>Portfolio</span>

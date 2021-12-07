@@ -10,6 +10,9 @@ function About() {
       {/* <div className={styles["mainContain"]}></div> */}
       <Container>
         {/* <div className={["display"]}></div> */}
+        <Link to="/" className={styles["homeLink"]}>
+          <div className={styles["homeButton"]}>Return Home</div>
+        </Link>
         <div className={styles["display"]}>
           <div>
             <p>WHAT'S UP EVERYBODY</p>
@@ -25,7 +28,7 @@ function About() {
             <p>Thank you for visiting my Profile Page</p>
             <p>
               Please have
-              <Link to="/profile" className={styles["lookAround"]}>
+              <Link to="/portfolio" className={styles["lookAround"]}>
                 <span> a look around</span>
               </Link>
             </p>
@@ -46,7 +49,7 @@ const Container = styled.div`
   background-size: cover;
 
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 
   margin: 50px 100px;
   transition: 250ms;

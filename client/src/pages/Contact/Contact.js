@@ -69,6 +69,9 @@ function Contact() {
   return (
     <div>
       <Container>
+        <Link to="/" className={styles["homeLink"]}>
+          <div className={styles["homeButton"]}>Return Home</div>
+        </Link>
         <div className={styles["fish"]}>
           <img src={fish} alt="" />
         </div>

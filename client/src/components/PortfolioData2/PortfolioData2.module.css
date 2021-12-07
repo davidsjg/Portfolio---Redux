@@ -1,0 +1,10 @@
+.displayData {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  opacity: 0;
+}
+
+.displayData:hover {
+  opacity: 1;
+}

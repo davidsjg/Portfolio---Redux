@@ -7,7 +7,6 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Header from "./components/Header/Header";
-import Contact2 from "./pages/Contact2/Contact2";
 
 function App() {
   return (

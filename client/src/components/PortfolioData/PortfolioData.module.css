@@ -1,0 +1,24 @@
+.data1 {
+  opacity: 0;
+  transition: 200ms;
+
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: smaller;
+  justify-content: center;
+  height: min-content;
+}
+
+.data1:hover {
+  background-image: none;
+
+  opacity: 1;
+}
+
+.data1 p {
+  position: relative;
+}
