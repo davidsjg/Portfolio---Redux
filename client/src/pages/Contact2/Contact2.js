@@ -78,8 +78,8 @@ function Contact2() {
           <div>
             <p>Please feel free to contact me!</p>
           </div>
-          <Form onSubmit={onSubmit}>
-            <InputGroup className="mb-3">
+          <Form onSubmit={onSubmit} className={styles["contact__form"]}>
+            <InputGroup className="mb-3" style={{ marginBottom: 2 }}>
               <FormControl
                 placeholder="YourName"
                 aria-label="YourName"
@@ -90,7 +90,7 @@ function Contact2() {
                 ref={userName}
               />
             </InputGroup>
-            <InputGroup className="mb-3">
+            <InputGroup className="mb-3" style={{ marginBottom: 2 }}>
               <FormControl
                 placeholder="Your Email Address"
                 aria-label="YourEmail"
@@ -101,7 +101,7 @@ function Contact2() {
                 ref={userEmail}
               />
             </InputGroup>
-            <InputGroup className="mb-3">
+            <InputGroup className="mb-3" style={{ marginBottom: 2 }}>
               <FormControl
                 as="textarea"
                 placeholder="Your Message"
@@ -113,10 +113,15 @@ function Contact2() {
                 ref={userMessage}
               />
             </InputGroup>
-            <Button type="submit" variant="secondary">
+            <Button
+              type="submit"
+              variant="secondary"
+              className={styles["submitButton"]}
+            >
               Submit
             </Button>
           </Form>
+          <div></div>
         </div>
       </Container>
     </div>

@@ -22,9 +22,9 @@ function About() {
             </p>
           </div>
           <div>
-            <p>Thank you for visiting my Profile Page,</p>
+            <p>Thank you for visiting my Profile Page</p>
             <p>
-              -Please have
+              Please have
               <Link to="/profile" className={styles["lookAround"]}>
                 <span> a look around</span>
               </Link>

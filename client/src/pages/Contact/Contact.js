@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -19,27 +19,48 @@ function Contact() {
     reply_to: "",
   });
 
-  const [userName, setUserName] = useState();
-  const [userEmail, setUserEmail] = useState();
-  const [userPhone, setUserPhone] = useState();
-  const [userMessage, setUserMessage] = useState();
+  const from = useRef();
+  const email = useRef();
+  const message = useRef();
+
+  const [from_Name, setFrom_Name] = useState();
+  const [reply_to, setReply_to] = useState();
+  const [useMess, setUseMess] = useState();
 
   const onSubmit = (e) => {
     e.preventDefault();
+    let curUser = from.current.value;
+    let curEmail = email.current.value;
+    let curMessage = message.current.value;
 
     {
-      if (userName === "" || userEmail === "" || userMessage === "") {
-        return alert("Please fill in name or email and a message.");
-      } else if (userEmail === "" || userMessage === "") {
-        return alert("Please fill in name or email.");
-      } else if (userEmail === "" || userMessage === "") {
-        return alert("Please fill in name or email.");
+      if (curUser === "" || curEmail === "" || curMessage === "") {
+        return alert("Please fill in all input fields.");
       } else {
         console.log("all input fields good to go");
       }
     }
 
-    setToSend({ ...toSend, userName, userEmail });
+    send(
+      "service_m4i6k16",
+      "template_0otklia",
+      toSend,
+      "user_HTcdS3U6s5IFjdiYFuFJt"
+    )
+      .then((response) => {
+        alert("Email sent successfully");
+        console.log("SUCCESS!", response.status, response.text);
+        from.current.value = "";
+        email.current.value = "";
+        message.current.value = "";
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
   return (
@@ -60,14 +81,32 @@ function Contact() {
           </div>
           <form onSubmit={onSubmit} className={styles["contact__form"]}>
             <span>Name</span>
-            <input onChange={(e) => setUserName(e.target.value)} />
+            <input
+              name="from_name"
+              value={toSend.from_name}
+              onChange={handleChange}
+              ref={from}
+            />
+
             <span>Email</span>
-            <input onChange={(e) => setUserEmail(e.target.value)} />
-            <span>Phone</span>
-            <input onChange={(e) => setUserPhone(e.target.value)} />
+            <input
+              name="reply_to"
+              value={toSend.reply_to}
+              onChange={handleChange}
+              ref={email}
+            />
+
             <span>Message</span>
-            <input onChange={(e) => setUserMessage(e.target.value)} />
-            <div className={styles["submitButton"]}>Submit</div>
+            <input
+              name="useMess"
+              value={toSend.useMess}
+              onChange={handleChange}
+              ref={message}
+            />
+
+            <button type="submit" className={styles["submitButton"]}>
+              Submit
+            </button>
           </form>
         </div>
       </Container>
