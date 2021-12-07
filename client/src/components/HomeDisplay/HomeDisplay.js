@@ -24,7 +24,7 @@ function HomeDisplay() {
     setTempBack("pic1.jpg");
   };
   const mouseEnter3 = () => {
-    setTempBack("pic5.jpg");
+    setTempBack("pic9.JPG");
   };
 
   const mouseLeave3 = () => {
