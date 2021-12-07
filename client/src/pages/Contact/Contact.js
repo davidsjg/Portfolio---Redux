@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import styles from "./Contact.module.css";
+import fish from "./fish.JPG";
+import fish2 from "./fish2.JPG";
+import fish3 from "./fish3.jpg";
 
 function Contact() {
   const [userName, setUserName] = useState();
@@ -17,6 +20,15 @@ function Contact() {
   return (
     <div>
       <Container>
+        <div className={styles["fish"]}>
+          <img src={fish} alt="" />
+        </div>
+        <div className={styles["fish2"]}>
+          <img src={fish2} alt="" />
+        </div>
+        <div className={styles["fish3"]}>
+          <img src={fish3} alt="" />
+        </div>
         <div className={styles["display"]}>
           <div>
             <p>Please feel free to contact me!</p>
@@ -46,8 +58,9 @@ const Container = styled.div`
   background-size: cover;
 
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+
+  justify-content: space-between;
 
   margin: 50px 100px;
   transition: 250ms;
