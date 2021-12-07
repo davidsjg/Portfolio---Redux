@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import styles from "./Contact.module.css";
@@ -12,6 +12,8 @@ import { init } from "emailjs-com";
 init("user_HTcdS3U6s5IFjdiYFuFJt");
 
 function Contact() {
+  const navigate = useNavigate();
+
   const [toSend, setToSend] = useState({
     from_name: "",
     to_name: "",
@@ -53,6 +55,7 @@ function Contact() {
         from.current.value = "";
         email.current.value = "";
         message.current.value = "";
+        navigate("/");
       })
       .catch((err) => {
         console.log("FAILED...", err);
