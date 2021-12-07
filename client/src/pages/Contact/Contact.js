@@ -13,8 +13,20 @@ function Contact() {
   const [userPhone, setUserPhone] = useState();
   const [userMessage, setUserMessage] = useState();
 
-  const onSubmit = () => {
-    console.log("sup");
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    {
+      if (userName === "" || userEmail === "" || userMessage === "") {
+        return alert("Please fill in name or email and a message.");
+      } else if (userEmail === "" || userMessage === "") {
+        return alert("Please fill in name or email.");
+      } else if (userEmail === "" || userMessage === "") {
+        return alert("Please fill in name or email.");
+      } else {
+        console.log("all input fields good to go");
+      }
+    }
   };
 
   return (
@@ -33,15 +45,17 @@ function Contact() {
           <div>
             <p>Please feel free to contact me!</p>
           </div>
-          <form onSubmit={onSubmit}></form>
-          <span>Name</span>
-          <input onChange={(e) => setUserName(e.target.value)} />
-          <span>Email</span>
-          <input onChange={(e) => setUserEmail(e.target.value)} />
-          <span>Phone</span>
-          <input onChange={(e) => setUserEmail(e.target.value)} />
-          <span>Message</span>
-          <input onChange={(e) => setUserMessage(e.target.value)} />
+          <form onSubmit={onSubmit} className={styles["contact__form"]}>
+            <span>Name</span>
+            <input onChange={(e) => setUserName(e.target.value)} />
+            <span>Email</span>
+            <input onChange={(e) => setUserEmail(e.target.value)} />
+            <span>Phone</span>
+            <input onChange={(e) => setUserEmail(e.target.value)} />
+            <span>Message</span>
+            <input onChange={(e) => setUserMessage(e.target.value)} />
+            <div className={styles["submitButton"]}>Submit</div>
+          </form>
         </div>
       </Container>
     </div>
