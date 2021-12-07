@@ -36,6 +36,7 @@
   align-items: center;
   font-weight: 100;
   justify-content: center;
+  cursor: pointer;
   flex: 1;
   font-size: larger;
   letter-spacing: 1.12px;
@@ -47,11 +48,11 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .centerHeader {
     display: none;
   }
-}
+} */
 
 .rightHeader {
   display: flex;
@@ -102,6 +103,12 @@
   transform: scaleX(1);
   opacity: 1;
 }
+
+.navMenu p {
+  font-size: larger;
+  letter-spacing: 1.12px;
+}
+
 .customMenu {
   cursor: pointer;
   padding-top: 6px;

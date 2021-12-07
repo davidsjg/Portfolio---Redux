@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./HomeDisplay.module.css";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
@@ -9,14 +10,14 @@ function HomeDisplay() {
   useEffect(() => {}, []);
 
   const mouseEnter1 = () => {
-    setTempBack("pic2.jpg");
+    setTempBack("pic3.jpg");
   };
 
   const mouseLeave1 = () => {
     setTempBack("pic1.jpg");
   };
   const mouseEnter2 = () => {
-    setTempBack("pic3.jpg");
+    setTempBack("pic2.jpg");
   };
 
   const mouseLeave2 = () => {
@@ -37,17 +38,32 @@ function HomeDisplay() {
         <Fade side>
           {/* <div className={`${styles["myWrap"]} ${styles["frame1"]}`}> */}
           <Wrap onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
-            <p>About Me</p>
+            <Link
+              to="/about"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <p>About Me</p>
+            </Link>
           </Wrap>
           {/* </div> */}
           {/* <div className={styles["myWrap"]}> */}
           <Wrap onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2}>
-            <p>Portfolio Page</p>
+            <Link
+              to="/portfolio"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <p>Portfolio Page</p>
+            </Link>
           </Wrap>
           {/* </div> */}
           {/* <div className={styles["myWrap"]}> */}
           <Wrap onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3}>
-            <p>Contact Me</p>
+            <Link
+              to="/contact"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <p>Contact Me</p>
+            </Link>
           </Wrap>
           {/* </div> */}
         </Fade>

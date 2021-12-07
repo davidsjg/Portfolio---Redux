@@ -6,7 +6,6 @@ import "./Home.module.css";
 function Home() {
   return (
     <div>
-      <Header />
       <HomeDisplay />
     </div>
   );

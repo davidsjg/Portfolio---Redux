@@ -1,0 +1,20 @@
+.mainContain {
+  min-height: calc(100vh - 185px);
+  /* background-image: url("/images/pic2.jpg"); */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.display {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 200px;
+}
+
+.lookAround {
+  color: white;
+  text-decoration: none;
+}

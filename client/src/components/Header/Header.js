@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
@@ -14,25 +15,39 @@ function Header() {
       <div className={styles["leftHeader"]}>
         <div className={styles["navMenu"]}>
           <a>
-            <span style={{ marginRight: -9 }}>About Me</span>
+            <Link
+              to="/about"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <span style={{ marginRight: -9 }}>About Me</span>
+            </Link>
           </a>
         </div>
       </div>
 
       <div className={styles["centerHeader"]}>
         <div className={styles["centerHeader2"]}>
-          <p>Joey Davidson Portfolio Page</p>
+          <div className={styles["navMenu"]}>
+            <a>
+              <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+                <span style={{ fontSize: "larger" }}>
+                  Joey Davidson Portfolio Page
+                </span>
+              </Link>
+            </a>
+          </div>
         </div>
       </div>
 
       <div className={styles["rightHeader"]}>
         <div className={styles["navMenu"]}>
           <a>
-            <span
-            // style={{ paddingRight: 15 }}
+            <Link
+              to="/Portfolio"
+              style={{ color: "black", textDecoration: "none" }}
             >
-              Portfolio
-            </span>
+              <span>Portfolio</span>
+            </Link>
           </a>
         </div>
       </div>
