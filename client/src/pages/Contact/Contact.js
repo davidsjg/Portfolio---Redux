@@ -7,7 +7,18 @@ import fish from "./fish.JPG";
 import fish2 from "./fish2.JPG";
 import fish3 from "./fish3.jpg";
 
+import { send } from "emailjs-com";
+import { init } from "emailjs-com";
+init("user_HTcdS3U6s5IFjdiYFuFJt");
+
 function Contact() {
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    to_name: "",
+    useMess: "",
+    reply_to: "",
+  });
+
   const [userName, setUserName] = useState();
   const [userEmail, setUserEmail] = useState();
   const [userPhone, setUserPhone] = useState();
@@ -27,6 +38,8 @@ function Contact() {
         console.log("all input fields good to go");
       }
     }
+
+    setToSend({ ...toSend, userName, userEmail });
   };
 
   return (
@@ -51,7 +64,7 @@ function Contact() {
             <span>Email</span>
             <input onChange={(e) => setUserEmail(e.target.value)} />
             <span>Phone</span>
-            <input onChange={(e) => setUserEmail(e.target.value)} />
+            <input onChange={(e) => setUserPhone(e.target.value)} />
             <span>Message</span>
             <input onChange={(e) => setUserMessage(e.target.value)} />
             <div className={styles["submitButton"]}>Submit</div>
