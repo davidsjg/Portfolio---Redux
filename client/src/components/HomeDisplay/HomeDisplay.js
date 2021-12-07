@@ -80,10 +80,10 @@ const Wrap = styled.div`
   /* margin: 50%50%; */
   margin-top: 250px;
 
-  border: 1px solid black;
+  /* border: 1px solid lightgray; */
   cursor: pointer;
   border-radius: 25px;
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+  box-shadow: rgb(0 0 0 / 12%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
@@ -93,7 +93,7 @@ const Wrap = styled.div`
     object-fit: cover;
   }
   p {
-    font-weight: 900;
+    font-weight: 100;
     padding: 0 20px;
     color: black;
     // background-color: white;
@@ -102,10 +102,14 @@ const Wrap = styled.div`
   }
 
   &:hover {
-    box-shadow: rgb(0 0 0 / 80%) 0px 26px 30px -10px,
-      rgb(0 0 0 / 72%) 0px 16px 10px -10px;
+    /* border: 1px solid black; */
+    /* box-shadow: rgb(0 0 0 / 80%) 0px 26px 30px -10px,
+      rgb(0 0 0 / 72%) 0px 16px 10px -10px; */
     transform: scale(1.05);
-    border-color: midnightblue;
-    background-color: oldlace;
+    /* border-color: black; */
+    /* background-color: white; */
+    p {
+      font-weight: 400;
+    }
   }
 `;
