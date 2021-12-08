@@ -15,7 +15,7 @@
   transition-duration: 167ms;
   text-align: center;
   margin: 30px 20px;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .googleBooks:hover {
@@ -42,7 +42,7 @@
   transition-duration: 167ms;
   text-align: center;
   margin: 30px 20px;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .beaverFrames {
@@ -56,7 +56,7 @@
   transition-duration: 167ms;
   text-align: center;
   margin: 30px 20px;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .googleData {
