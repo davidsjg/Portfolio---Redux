@@ -10,14 +10,14 @@ function HomeDisplay() {
   useEffect(() => {}, []);
 
   const mouseEnter1 = () => {
-    setTempBack("pic3.jpg");
+    setTempBack("pic3.JPG");
   };
 
   const mouseLeave1 = () => {
     setTempBack("pic1.jpg");
   };
   const mouseEnter2 = () => {
-    setTempBack("pic2.jpg");
+    setTempBack("pic2.JPG");
   };
 
   const mouseLeave2 = () => {

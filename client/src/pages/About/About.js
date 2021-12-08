@@ -43,7 +43,7 @@ export default About;
 
 const Container = styled.div`
   min-height: calc(100vh - 185px);
-  background-image: url("/images/pic3.jpg");
+  background-image: url("/images/pic3.JPG");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;

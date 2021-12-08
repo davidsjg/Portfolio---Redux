@@ -128,7 +128,7 @@ export default Portfolio;
 
 const Container = styled.div`
   min-height: calc(100vh - 185px);
-  background-image: url("/images/pic2.jpg");
+  background-image: url("/images/pic2.JPG");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
