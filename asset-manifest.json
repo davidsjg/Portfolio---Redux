@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Portfolio---Redux/static/css/main.a4554111.chunk.css",
+    "main.js": "/Portfolio---Redux/static/js/main.fdfb8d0c.chunk.js",
+    "main.js.map": "/Portfolio---Redux/static/js/main.fdfb8d0c.chunk.js.map",
+    "runtime-main.js": "/Portfolio---Redux/static/js/runtime-main.7073d682.js",
+    "runtime-main.js.map": "/Portfolio---Redux/static/js/runtime-main.7073d682.js.map",
+    "static/css/2.bf9ac899.chunk.css": "/Portfolio---Redux/static/css/2.bf9ac899.chunk.css",
+    "static/js/2.83a4d435.chunk.js": "/Portfolio---Redux/static/js/2.83a4d435.chunk.js",
+    "static/js/2.83a4d435.chunk.js.map": "/Portfolio---Redux/static/js/2.83a4d435.chunk.js.map",
+    "index.html": "/Portfolio---Redux/index.html",
+    "static/css/2.bf9ac899.chunk.css.map": "/Portfolio---Redux/static/css/2.bf9ac899.chunk.css.map",
+    "static/css/main.a4554111.chunk.css.map": "/Portfolio---Redux/static/css/main.a4554111.chunk.css.map",
+    "static/js/2.83a4d435.chunk.js.LICENSE.txt": "/Portfolio---Redux/static/js/2.83a4d435.chunk.js.LICENSE.txt",
+    "static/media/Portfolio.module.css": "/Portfolio---Redux/static/media/JPW.7bc04847.png",
+    "static/media/fish.b60ca671.JPG": "/Portfolio---Redux/static/media/fish.b60ca671.JPG",
+    "static/media/fish2.2e3ce9ca.JPG": "/Portfolio---Redux/static/media/fish2.2e3ce9ca.JPG",
+    "static/media/fish3.7d0e25e8.jpg": "/Portfolio---Redux/static/media/fish3.7d0e25e8.jpg",
+    "static/media/slick-theme.css": "/Portfolio---Redux/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7073d682.js",
+    "static/css/2.bf9ac899.chunk.css",
+    "static/js/2.83a4d435.chunk.js",
+    "static/css/main.a4554111.chunk.css",
+    "static/js/main.fdfb8d0c.chunk.js"
+  ]
+}
