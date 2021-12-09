@@ -12,20 +12,20 @@ function ImgSlider() {
     speed: 500,
     slidesToShow: 1,
     SlidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
   };
 
   return (
     <Carousel {...settings}>
       <Wrap>
-        <img className={styles["sliderImg"]} src="/images/pic2.jpg" />
+        <img className={styles["sliderImg"]} src="/images/picTEST.png" />
       </Wrap>
-      <Wrap>
-        <img className={styles["sliderImg"]} src="/images/pic3.jpg" />
-      </Wrap>
-      <Wrap>
+      {/* <Wrap>
+        <img className={styles["sliderImg"]} src="/images/slider-badag.jpg" />
+      </Wrap> */}
+      {/* <Wrap>
         <img className={styles["sliderImg"]} src="/images/pic5.jpg" />
-      </Wrap>
+      </Wrap> */}
     </Carousel>
   );
 }
@@ -33,9 +33,10 @@ function ImgSlider() {
 export default ImgSlider;
 
 const Carousel = styled(Slider)`
-  margin-top: 20px;
+  /* margin-top: 20px; */
   position: inherit;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-position: center;
   background-size: cover;
 
@@ -64,12 +65,12 @@ const Wrap = styled.div`
   img {
     border: 4px solid transparent;
     border-radius: 4px;
-    background-position: center;
-    background-size: cover;
+    /* background-position: center; */
+    background-size: contain;
     width: 100%;
-    height: 100%;
-    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-      rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    height: 475px;
+    /* box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+      rgb(0 0 0 / 73%) 0px 16px 10px -10px; */
     transition-duration: false;
   }
 
