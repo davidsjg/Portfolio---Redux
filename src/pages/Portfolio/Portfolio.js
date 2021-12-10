@@ -41,9 +41,20 @@ function Portfolio() {
       tools:
         "React, Redux, Node.js, MongoDB, Context API, JavaScript, HTML, Bootstrap",
       github: "https://github.com/davidsjg/Beaver-Framing",
-      deployed: "coming soon",
-      image: "ComingSoon.png",
+      deployed: "https://beaver-framing.herokuapp.com/",
+      image: "beaver.png",
       class: "beaverFrames",
+    },
+    {
+      tesla: "Tesla Home Page",
+      teslaDeploy: "https://tesla-jgd.herokuapp.com/",
+      teslaTools: "React, Redux Toolkit",
+      amazon: "Amazon Home Page, Cart, Login",
+      amazonDeploy: "https://amazon-clone-jgd.herokuapp.com/",
+      amazonTools: "React, Redux Toolkit",
+      disney: "Disney Home Page",
+      disneyDeploy: "https://disney-jgd.herokuapp.com/",
+      disneyTools: "React, React Slick, Redux Toolkit, ",
     },
   ];
 
@@ -118,6 +129,8 @@ function Portfolio() {
               </p>
             </div>
           </div>
+
+          <PortfolioData project3={allProjects[3]} />
         </div>
       </Container>
     </>
@@ -127,14 +140,14 @@ function Portfolio() {
 export default Portfolio;
 
 const Container = styled.div`
-  min-height: calc(100vh - 185px);
+  height: 500px;
   background-image: url("/images/pic2.JPG");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-
+  /* 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; */
 
   margin: 50px 100px;
   transition: 250ms;

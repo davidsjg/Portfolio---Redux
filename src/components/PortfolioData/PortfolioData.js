@@ -3,57 +3,43 @@ import styles from "./PortfolioData.module.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-function PortfolioData({ project }) {
-  console.log(project.image);
+function PortfolioData({ project3 }) {
   return (
-    <>
-      <GridCol bgImage={project.image}>
-        <div className={styles["data1"]}>
-          <p>Title: {project.title}</p>
-          <p>Summary: {project.summary}</p>
-          <p>Role: {project.role}</p>
-          <p>Tools: {project.tools}</p>
-          <p>
-            Github:
-            <a href={project.github} target="_blank">
-              {project.github}
-            </a>
-          </p>
-          <p>
-            Deployed:
-            <a href={project.deployed} target="_blank">
-              {project.deployed}
-            </a>
-          </p>
-        </div>
-      </GridCol>
-    </>
+    <div className={styles["clones"]}>
+      <div className={styles["clonesData"]}>
+        <p>Clone: {project3.tesla}</p>
+        <p>Deployed: {project3.teslaDeploy}</p>
+        <a href={project3.teslaDeploy} target="_blank">
+          {project3.teslaDeploy}
+        </a>
+        <p>Tools: {project3.teslaTools}</p>
+        <p>Clone: {project3.amazon}</p>
+        <a href={project3.amazonDeploy} target="_blank">
+          {project3.amazonDeploy}
+        </a>
+        <p>Tools: {project3.amazonTools}</p>
+        <p>Clone: {project3.disney}</p>
+        <a href={project3.disneyDeploy} target="_blank">
+          {project3.disneyDeploy}
+        </a>
+        <p>Tools: {project3.disneyTools}</p>
+      </div>
+    </div>
   );
 }
 
 export default PortfolioData;
 
-const GridCol = styled.div`
-  background-image: ${(props) => `url("/images/${props.bgImage}")`};
-  background-position: center;
-  background-size: cover;
+const Container = styled.div`
+  height: 500px;
+  background-image: url("/images/TesDis.png");
+  background-position: top;
   background-repeat: no-repeat;
-  /* height: 400px;
-  width: 220px; */
-  /* width: 33%; */
-  height: min-content;
-  box-shadow: inset 0 0 0 1px #c1d3eb;
-  border-radius: 24px;
-  transition-duration: 167ms;
-  text-align: center;
-  transition: 250ms;
-  opacity: 0.8;
-  padding: 40px;
-  margin: 20px;
+  background-size: cover;
+  /* 
+  display: flex;
+  justify-content: space-between; */
 
-  :hover {
-    background-image: none;
-    background-color: #c1d3eb;
-    transition: 250ms;
-  }
+  margin: 50px 100px;
+  transition: 250ms;
 `;
