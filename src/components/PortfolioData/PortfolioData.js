@@ -8,17 +8,21 @@ function PortfolioData({ project3 }) {
     <div className={styles["clones"]}>
       <div className={styles["clonesData"]}>
         <p>Clone: {project3.tesla}</p>
-        <p>Deployed: {project3.teslaDeploy}</p>
+        <span>Deployed: </span>
         <a href={project3.teslaDeploy} target="_blank">
           {project3.teslaDeploy}
         </a>
         <p>Tools: {project3.teslaTools}</p>
-        <p>Clone: {project3.amazon}</p>
+        <p style={{ borderTop: "3px solid black" }}>Clone: {project3.amazon}</p>
+        <span>Deployed: </span>
         <a href={project3.amazonDeploy} target="_blank">
           {project3.amazonDeploy}
         </a>
         <p>Tools: {project3.amazonTools}</p>
-        <p>Clone: {project3.disney}</p>
+        <p style={{ borderTop: "3px solid black", marginTop: 0 }}>
+          Clone: {project3.disney}
+        </p>
+        <span>Deployed: </span>
         <a href={project3.disneyDeploy} target="_blank">
           {project3.disneyDeploy}
         </a>
