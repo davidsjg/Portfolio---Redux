@@ -140,7 +140,7 @@ function Portfolio() {
 export default Portfolio;
 
 const Container = styled.div`
-  height: 500px;
+  /* height: 500px; */
   background-image: url("/images/pic2.JPG");
   background-position: top;
   background-repeat: no-repeat;
@@ -151,6 +151,12 @@ const Container = styled.div`
 
   margin: 50px 100px;
   transition: 250ms;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+  }
 `;
 
 // const Container = styled.div`
