@@ -128,3 +128,25 @@
   transform: scale(1.05);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .display {
+    align-items: flex-start;
+  }
+  .homeLink {
+    display: none;
+  }
+  .fish {
+    display: none;
+  }
+  .fish2 {
+    display: none;
+  }
+  .fish3 {
+    display: none;
+  }
+  .submitButton {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+}
