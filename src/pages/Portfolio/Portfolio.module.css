@@ -1,3 +1,7 @@
+.topClick {
+  display: none;
+}
+
 .displayCards {
   display: grid;
 
@@ -126,5 +130,12 @@
 @media (max-width: 768px) {
   .contactP {
     color: white !important;
+  }
+  .topClick {
+    display: flex;
+    margin-top: 20px;
+  }
+  .topClick h3 {
+    font-weight: 200;
   }
 }

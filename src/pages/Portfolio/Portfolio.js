@@ -65,6 +65,9 @@ function Portfolio() {
   return (
     <>
       <Container>
+        <div className={styles["topClick"]}>
+          <h3>Tap a Project to Explore!</h3>
+        </div>
         <div className={styles["displayCards"]}>
           <div className={styles["googleBooks"]}>
             <div className={styles["googleData"]}>
