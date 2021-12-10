@@ -34,7 +34,7 @@ function HomeDisplay() {
   return (
     <div className={styles["mainDiv"]}>
       <Container bgImage={tempBack}>
-        <Fade side>
+        <Fade side className={styles["fade"]}>
           <Wrap onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
             <Link
               to="/about"
@@ -58,7 +58,7 @@ function HomeDisplay() {
               to="/contact"
               style={{ color: "black", textDecoration: "none" }}
             >
-              <p>Contact Me</p>
+              <p className={styles["contactP"]}>Contact Me</p>
             </Link>
           </Wrap>
         </Fade>
@@ -75,23 +75,28 @@ const Container = styled.div`
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+
   display: grid;
-  grid-template: repeat(3, minmax(0, 1fr));
-  display: flex;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-gap: 1rem;
+
   margin: 50px;
   grid-gap: 45px;
   transition: 250ms;
-  /* border-radius: 400px; */
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
 `;
 
 const Wrap = styled.div`
   display: flex;
-  /* justify-content: center; */
-  /* margin: 50%50%; */
+  justify-content: center;
+  align-items: center;
   margin-top: 250px;
 
-  /* border: 1px solid lightgray; */
   cursor: pointer;
   border-radius: 25px;
   box-shadow: rgb(0 0 0 / 12%) 0px 26px 30px -10px,
@@ -107,9 +112,10 @@ const Wrap = styled.div`
     font-weight: 100;
     padding: 0 20px;
     color: black;
-    // background-color: white;
     background-size: contain;
     border-radius: 2px;
+
+ */
   }
 
   &:hover {
