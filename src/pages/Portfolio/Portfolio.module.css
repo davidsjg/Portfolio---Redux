@@ -80,7 +80,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: inherit;
+  justify-content: space-around;
+  align-items: center;
   overflow-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -91,7 +92,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: inherit;
+  justify-content: space-around;
+  align-items: center;
   overflow-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -102,7 +104,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: inherit;
+  justify-content: space-around;
+  align-items: center;
   overflow-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -118,4 +121,10 @@
 
 .beaverData:hover {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .contactP {
+    color: white !important;
+  }
 }
