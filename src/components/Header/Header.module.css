@@ -14,12 +14,33 @@
   /* border: 1px solid black; */
 }
 
+.rightHeader {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  letter-spacing: 1.12px;
+  margin-right: 5px;
+}
 .leftHeader {
   display: flex;
   align-items: center;
   justify-content: left;
-  /* cursor: pointer; */
   letter-spacing: 1.12px;
+}
+
+@media (max-width: 768px) {
+  .rightHeader {
+    display: none;
+  }
+  .leftHeader {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rightHeader {
+    display: none;
+  }
 }
 
 .centerHeader {
@@ -53,15 +74,6 @@
     display: none;
   }
 } */
-
-.rightHeader {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  /* cursor: pointer; */
-  letter-spacing: 1.12px;
-  margin-right: 5px;
-}
 
 .rightHeader span {
   margin: 5px;

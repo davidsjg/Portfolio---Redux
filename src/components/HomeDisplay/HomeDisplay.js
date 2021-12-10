@@ -33,10 +33,8 @@ function HomeDisplay() {
 
   return (
     <div className={styles["mainDiv"]}>
-      {/* <div className={styles[`${tempBack}`]}></div> */}
       <Container bgImage={tempBack}>
         <Fade side>
-          {/* <div className={`${styles["myWrap"]} ${styles["frame1"]}`}> */}
           <Wrap onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
             <Link
               to="/about"
@@ -45,8 +43,7 @@ function HomeDisplay() {
               <p>About Me</p>
             </Link>
           </Wrap>
-          {/* </div> */}
-          {/* <div className={styles["myWrap"]}> */}
+
           <Wrap onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2}>
             <Link
               to="/portfolio"
@@ -55,8 +52,7 @@ function HomeDisplay() {
               <p>Portfolio Page</p>
             </Link>
           </Wrap>
-          {/* </div> */}
-          {/* <div className={styles["myWrap"]}> */}
+
           <Wrap onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3}>
             <Link
               to="/contact"
@@ -65,7 +61,6 @@ function HomeDisplay() {
               <p>Contact Me</p>
             </Link>
           </Wrap>
-          {/* </div> */}
         </Fade>
       </Container>
     </div>

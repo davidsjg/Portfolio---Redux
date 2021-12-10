@@ -29,17 +29,3 @@ function PortfolioData({ project3 }) {
 }
 
 export default PortfolioData;
-
-const Container = styled.div`
-  height: 500px;
-  background-image: url("/images/TesDis.png");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* 
-  display: flex;
-  justify-content: space-between; */
-
-  margin: 50px 100px;
-  transition: 250ms;
-`;
