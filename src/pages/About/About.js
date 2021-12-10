@@ -15,7 +15,7 @@ function About() {
         </Link>
         <div className={styles["display"]}>
           <div>
-            <p>WHAT'S UP EVERYBODY</p>
+            <p>HELLO EVERYONE</p>
             <br />
             <p>My name is Joey Davidson</p>
             <br />
@@ -25,11 +25,13 @@ function About() {
             </p>
           </div>
           <div>
-            <p>Thank you for visiting my Profile Page</p>
-            <p>
-              Please have
+            <p className={styles["mediaColor"]}>
+              Thank you for visiting my Profile Page
+            </p>
+            <p className={styles["mediaColor"]}>
+              Please have a{" "}
               <Link to="/portfolio" className={styles["lookAround"]}>
-                <span> a look around</span>
+                <span>look around</span>
               </Link>
             </p>
           </div>

@@ -11,6 +11,22 @@
   color: black;
 }
 
+@media (max-width: 768px) {
+  .homeLink {
+    display: none;
+  }
+  .mediaColor {
+    color: white;
+  }
+}
+
+/* 
+@media (max-width: 768px) {
+  .homeLink {
+    display: none;
+  }
+} */
+
 .homeButton {
   box-shadow: inset 0 0 0 1px black;
   border-radius: 24px;
@@ -42,5 +58,5 @@
 
 .lookAround {
   color: white;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
