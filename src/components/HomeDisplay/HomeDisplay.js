@@ -3,67 +3,71 @@ import { Link } from "react-router-dom";
 import styles from "./HomeDisplay.module.css";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import { LazyImage } from "../LazyImage/LazyImage";
 
 function HomeDisplay() {
-  const [tempBack, setTempBack] = useState("pic1.jpg");
+  const [tempBack, setTempBack] = useState("https://i.imgur.com/7QCcOFm.jpg");
 
   useEffect(() => {}, []);
 
   const mouseEnter1 = () => {
-    setTempBack("pic3.JPG");
+    setTempBack("https://i.imgur.com/Vd7pInL.jpg");
   };
 
   const mouseLeave1 = () => {
-    setTempBack("pic1.jpg");
+    setTempBack("https://i.imgur.com/7QCcOFm.jpg");
   };
   const mouseEnter2 = () => {
-    setTempBack("pic2.JPG");
+    setTempBack("https://i.imgur.com/YxzpERh.jpg");
   };
 
   const mouseLeave2 = () => {
-    setTempBack("pic1.jpg");
+    setTempBack("https://i.imgur.com/7QCcOFm.jpg");
   };
   const mouseEnter3 = () => {
-    setTempBack("pic9.JPG");
+    setTempBack("https://i.imgur.com/anHPZ70.jpg");
   };
 
   const mouseLeave3 = () => {
-    setTempBack("pic1.jpg");
+    setTempBack("https://i.imgur.com/7QCcOFm.jpg");
   };
 
   return (
-    <div className={styles["mainDiv"]}>
-      <Container bgImage={tempBack}>
-        <Fade side className={styles["fade"]}>
-          <Wrap onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
-            <Link
-              to="/about"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              <p>About Me</p>
-            </Link>
-          </Wrap>
+    <>
+      <LazyImage />
+      <div className={styles["mainDiv"]}>
+        <Container bgImage={tempBack}>
+          <Fade side className={styles["fade"]}>
+            <Wrap onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
+              <Link
+                to="/about"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                <p>About Me</p>
+              </Link>
+            </Wrap>
 
-          <Wrap onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2}>
-            <Link
-              to="/portfolio"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              <p>Portfolio Page</p>
-            </Link>
-          </Wrap>
+            <Wrap onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2}>
+              <Link
+                to="/portfolio"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                <p>Portfolio Page</p>
+              </Link>
+            </Wrap>
 
-          <Wrap onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3}>
-            <Link
-              to="/contact"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              <p className={styles["contactP"]}>Contact Me</p>
-            </Link>
-          </Wrap>
-        </Fade>
-      </Container>
-    </div>
+            <Wrap onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3}>
+              <Link
+                to="/contact"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                <p className={styles["contactP"]}>Contact Me</p>
+              </Link>
+            </Wrap>
+          </Fade>
+        </Container>
+      </div>
+    </>
   );
 }
 
@@ -71,7 +75,7 @@ export default HomeDisplay;
 
 const Container = styled.div`
   min-height: calc(100vh - 185px);
-  background-image: ${(props) => `url("/images/${props.bgImage}")`};
+  background-image: ${(props) => `url("${props.bgImage}")`};
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
