@@ -77,10 +77,14 @@ const Container = styled.div`
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  /* 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 1rem; */
 
   margin: 50px;
   grid-gap: 45px;
@@ -100,7 +104,8 @@ const Wrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  /* margin-top: 250px; */
+  margin: 0 30px;
   cursor: pointer;
   border-radius: 25px;
   box-shadow: rgb(0 0 0 / 12%) 0px 26px 30px -10px,
