@@ -10,9 +10,6 @@
 }
 
 @media (max-width: 768px) {
-  .contactP {
-    /* color: white !important; */
-  }
   .mainDiv {
     height: 400px;
   }
