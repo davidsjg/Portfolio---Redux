@@ -121,7 +121,7 @@ export default Contact;
 
 const Container = styled.div`
   min-height: calc(100vh - 185px);
-  background-image: url("https://i.imgur.com/YxzpERh.jpg");
+  background-image: url("https://i.imgur.com/anHPZ70.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;

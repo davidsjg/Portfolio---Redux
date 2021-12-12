@@ -38,32 +38,30 @@ function HomeDisplay() {
       <div className={styles["mainDiv"]}>
         <Container bgImage={tempBack}>
           <Fade side className={styles["fade"]}>
-            <Wrap onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
-              <Link
-                to="/about"
-                style={{ color: "black", textDecoration: "none" }}
-              >
+            <Link
+              to="/about"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <Wrap onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
                 <p>About Me</p>
-              </Link>
-            </Wrap>
-
-            <Wrap onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2}>
-              <Link
-                to="/portfolio"
-                style={{ color: "black", textDecoration: "none" }}
-              >
+              </Wrap>
+            </Link>
+            <Link
+              to="/portfolio"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <Wrap onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2}>
                 <p>Portfolio Page</p>
-              </Link>
-            </Wrap>
-
-            <Wrap onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3}>
-              <Link
-                to="/contact"
-                style={{ color: "black", textDecoration: "none" }}
-              >
+              </Wrap>
+            </Link>
+            <Link
+              to="/contact"
+              style={{ color: "black", textDecoration: "none" }}
+            >
+              <Wrap onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3}>
                 <p className={styles["contactP"]}>Contact Me</p>
-              </Link>
-            </Wrap>
+              </Wrap>
+            </Link>
           </Fade>
         </Container>
       </div>
@@ -92,6 +90,8 @@ const Container = styled.div`
     min-height: calc(100vh - 285px);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 50px;
   }
 `;

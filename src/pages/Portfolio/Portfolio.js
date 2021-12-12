@@ -36,8 +36,8 @@ function Portfolio() {
       class: "jpwFinder",
     },
     {
-      title: "Beaver Frames",
-      summary: "App for Beaver Frames framing studio - Vail, CO",
+      title: "Beaver Frames - in Development",
+      summary: "App in development for Beaver Frames framing studio - Vail, CO",
       role: "Developed project from creation to completion (Full Stack)",
       tools:
         "React, Redux, Node.js, MongoDB, Context API, JavaScript, HTML, Bootstrap",
@@ -52,10 +52,10 @@ function Portfolio() {
       teslaTools: "React, Redux Toolkit",
       amazon: "Amazon Home Page, Cart, Login",
       amazonDeploy: "https://amazon-clone-jgd.herokuapp.com/",
-      amazonTools: "React, Redux Toolkit",
+      amazonTools: "React, Firebase Auth",
       disney: "Disney Home Page",
       disneyDeploy: "https://disney-jgd.herokuapp.com/",
-      disneyTools: "React, React Slick, Redux Toolkit, ",
+      disneyTools: "React, React Slick, Redux Toolkit",
     },
   ];
 

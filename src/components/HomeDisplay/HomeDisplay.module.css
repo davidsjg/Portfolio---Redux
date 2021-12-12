@@ -5,11 +5,13 @@
 
 .fade {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 768px) {
   .contactP {
-    color: white !important;
+    /* color: white !important; */
   }
   .mainDiv {
     height: 400px;
