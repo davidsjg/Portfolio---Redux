@@ -3,9 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import styles from "./Contact.module.css";
-import fish from "./fish.JPG";
-import fish2 from "./fish2.JPG";
-import fish3 from "./fish3.jpg";
 
 import { send } from "emailjs-com";
 import { init } from "emailjs-com";

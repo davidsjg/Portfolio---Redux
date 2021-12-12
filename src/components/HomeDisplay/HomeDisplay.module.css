@@ -11,4 +11,7 @@
   .contactP {
     color: white !important;
   }
+  .mainDiv {
+    height: 400px;
+  }
 }

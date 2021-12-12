@@ -89,6 +89,7 @@ const Container = styled.div`
   transition: 250ms;
 
   @media (max-width: 768px) {
+    min-height: calc(100vh - 285px);
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -100,7 +101,6 @@ const Wrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 250px;
-
   cursor: pointer;
   border-radius: 25px;
   box-shadow: rgb(0 0 0 / 12%) 0px 26px 30px -10px,
@@ -118,19 +118,16 @@ const Wrap = styled.div`
     color: black;
     background-size: contain;
     border-radius: 2px;
-
- */
   }
 
   &:hover {
-    /* border: 1px solid black; */
-    /* box-shadow: rgb(0 0 0 / 80%) 0px 26px 30px -10px,
-      rgb(0 0 0 / 72%) 0px 16px 10px -10px; */
     transform: scale(1.05);
-    /* border-color: black; */
-    /* background-color: white; */
     p {
       font-weight: 400;
     }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
   }
 `;
