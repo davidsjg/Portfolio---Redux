@@ -73,13 +73,13 @@ function Contact() {
           <div className={styles["homeButton"]}>Return Home</div>
         </Link>
         <div className={styles["fish"]}>
-          <img src={fish} alt="" />
+          <img src="https://i.imgur.com/Un3dy6w.jpg" alt="" />
         </div>
         <div className={styles["fish2"]}>
-          <img src={fish2} alt="" />
+          <img src="https://i.imgur.com/Un3dy6w.jpg" alt="" />
         </div>
         <div className={styles["fish3"]}>
-          <img src={fish3} alt="" />
+          <img src="https://i.imgur.com/Xgdhnu8.jpg" alt="" />
         </div>
         <div className={styles["display"]}>
           <div>

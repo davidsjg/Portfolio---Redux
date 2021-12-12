@@ -8,6 +8,7 @@ import styled from "styled-components";
 import styles from "./Portfolio.module.css";
 import PortfolioData from "../../components/PortfolioData/PortfolioData";
 import PortfolioData2 from "../../components/PortfolioData2/PortfolioData2";
+import { LazyImage2 } from "../../components/LazyImage2/LazyImage2";
 
 function Portfolio() {
   const allProjects = [
@@ -19,7 +20,7 @@ function Portfolio() {
       tools: "MongoDB, Express, React, Node.js, Redux Toolkit",
       github: "https://github.com/davidsjg/Google-Books-Search-Redux",
       deployed: "coming soon",
-      image: "GBooks.png",
+      image: "https://i.imgur.com/lciFI5B.png",
       class: "{styles[googleBooks]}",
     },
     {
@@ -31,7 +32,7 @@ function Portfolio() {
         "React, MongoDB, Node.js, Context API, JavaScript, HTML, Bootstrap",
       github: "https://github.com/davidsjg/JPW-Fishing-App",
       deployed: "https://fathomless-crag-56888.herokuapp.com/",
-      image: "JPW.png",
+      image: "https://i.imgur.com/inj0tje.png",
       class: "jpwFinder",
     },
     {
@@ -42,7 +43,7 @@ function Portfolio() {
         "React, Redux, Node.js, MongoDB, Context API, JavaScript, HTML, Bootstrap",
       github: "https://github.com/davidsjg/Beaver-Framing",
       deployed: "https://beaver-framing.herokuapp.com/",
-      image: "beaver.png",
+      image: "https://i.imgur.com/oqtTsFF.png",
       class: "beaverFrames",
     },
     {
@@ -64,6 +65,7 @@ function Portfolio() {
 
   return (
     <>
+      <LazyImage2 />
       <Container>
         <div className={styles["topClick"]}>
           <h3>Tap a Project to Explore!</h3>
