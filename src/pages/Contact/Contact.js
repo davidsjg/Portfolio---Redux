@@ -73,7 +73,7 @@ function Contact() {
           <img src="https://i.imgur.com/Un3dy6w.jpg" alt="" />
         </div>
         <div className={styles["fish2"]}>
-          <img src="https://i.imgur.com/Un3dy6w.jpg" alt="" />
+          <img src="https://i.imgur.com/9vrxlLY.jpg" alt="" />
         </div>
         <div className={styles["fish3"]}>
           <img src="https://i.imgur.com/Xgdhnu8.jpg" alt="" />

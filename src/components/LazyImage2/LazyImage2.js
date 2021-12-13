@@ -18,7 +18,7 @@ var fish1 = document.createElement("img");
 gbooks.src = "https://i.imgur.com/Un3dy6w.jpg";
 
 var fish2 = document.createElement("img");
-gbooks.src = "https://i.imgur.com/Un3dy6w.jpg";
+gbooks.src = "https://i.imgur.com/9vrxlLY.jpg";
 
 var fish3 = document.createElement("img");
 gbooks.src = "https://i.imgur.com/Xgdhnu8.jpg";
