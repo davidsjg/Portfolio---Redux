@@ -12,15 +12,26 @@ import { LazyImage2 } from "../../components/LazyImage2/LazyImage2";
 
 function Portfolio() {
   const allProjects = [
+    // {
+    //   title: "Google Book Search",
+    //   summary:
+    //     "App designed to act like an online libarary.  Users can search, view, or save books once logged in.",
+    //   role: "Developed full MERN stack",
+    //   tools: "MongoDB, Express, React, Node.js, Redux Toolkit",
+    //   github: "https://github.com/davidsjg/Google-Books-Search-Redux",
+    //   deployed: "coming soon",
+    //   image: "https://i.imgur.com/lciFI5B.png",
+    //   class: "{styles[googleBooks]}",
+    // },
     {
-      title: "Google Book Search",
+      title: "Goldy's Pantry",
       summary:
-        "App designed to act like an online libarary.  Users can search, view, or save books once logged in.",
+        "Website designed to visualize a collection of recipes.  React with Redux and a MongoDB backend.",
       role: "Developed full MERN stack",
-      tools: "MongoDB, Express, React, Node.js, Redux Toolkit",
-      github: "https://github.com/davidsjg/Google-Books-Search-Redux",
-      deployed: "coming soon",
-      image: "https://i.imgur.com/lciFI5B.png",
+      tools: "MongoDB, Express, React, Node.js, Redux",
+      github: "https://github.com/davidsjg/DMD-Recipes-App",
+      deployed: "https://goldys-pantry.herokuapp.com/",
+      image: "https://i.imgur.com/oqtTsFF.png",
       class: "{styles[googleBooks]}",
     },
     {
