@@ -9,7 +9,7 @@ function PortfolioData({ project3 }) {
       <div className={styles["clonesData"]}>
         <div>
           <p>Clone: {project3.tesla}</p>
-          <span>Deployed: </span>
+          <span>GitHub: </span>
           <a href={project3.teslaDeploy} target="_blank">
             {project3.teslaDeploy}
           </a>
@@ -20,7 +20,7 @@ function PortfolioData({ project3 }) {
           <p style={{ borderTop: "3px solid black", marginTop: 0 }}>
             Clone: {project3.amazon}
           </p>
-          <span>Deployed: </span>
+          <span>GitHub: </span>
           <a href={project3.amazonDeploy} target="_blank">
             {project3.amazonDeploy}
           </a>
@@ -31,7 +31,7 @@ function PortfolioData({ project3 }) {
           <p style={{ borderTop: "3px solid black", marginTop: 0 }}>
             Clone: {project3.disney}
           </p>
-          <span>Deployed: </span>
+          <span>GitHub: </span>
           <a href={project3.disneyDeploy} target="_blank">
             {project3.disneyDeploy}
           </a>

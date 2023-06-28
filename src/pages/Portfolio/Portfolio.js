@@ -47,7 +47,7 @@ function Portfolio() {
       class: "jpwFinder",
     },
     {
-      title: "Beaver Frames - in Development",
+      title: "Beaver Framing - in Development",
       summary: "App in development for Beaver Frames framing studio - Vail, CO",
       role: "Developed project from creation to completion (Full Stack)",
       tools:
@@ -59,13 +59,13 @@ function Portfolio() {
     },
     {
       tesla: "Tesla Home Page",
-      teslaDeploy: "https://tesla-jgd.herokuapp.com/",
+      teslaDeploy: "https://github.com/davidsjg/Tesla-Clone",
       teslaTools: "React, Redux Toolkit",
       amazon: "Amazon Home Page, Cart, Login",
-      amazonDeploy: "https://amazon-clone-jgd.herokuapp.com/",
+      amazonDeploy: "https://github.com/davidsjg/Amazon-Clone",
       amazonTools: "React, Firebase Auth",
       disney: "Disney Home Page",
-      disneyDeploy: "https://disney-jgd.herokuapp.com/",
+      disneyDeploy: "https://github.com/davidsjg/Disney-Clone",
       disneyTools: "React, React Slick, Redux Toolkit",
     },
   ];
@@ -95,12 +95,12 @@ function Portfolio() {
                   {project1.github}
                 </a>
               </p>
-              <p>
+              {/* <p>
                 Deployed:
                 <a href={project1.deployed} target="_blank">
                   {project1.deployed}
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
           <div className={styles["jpwFinder"]}>
@@ -116,12 +116,12 @@ function Portfolio() {
                   {project2.github}
                 </a>
               </p>
-              <p>
+              {/* <p>
                 Deployed:
                 <a href={project2.deployed} target="_blank">
                   {project2.deployed}
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
           <div className={styles["beaverFrames"]}>
@@ -137,12 +137,12 @@ function Portfolio() {
                   {project3.github}
                 </a>
               </p>
-              <p>
+              {/* <p>
                 Deployed:
                 <a href={project3.deployed} target="_blank">
                   {project3.deployed}
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
 
