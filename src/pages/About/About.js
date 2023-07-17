@@ -16,15 +16,19 @@ function About() {
         <div className={styles["display"]}>
           <div>
             <p>HELLO EVERYONE</p>
-            <br />
             <p>My name is Joey Davidson</p>
-            <br />
             <p>
               I enjoy music, the outdoors, and trying to recreate websites that
               have interesting designs
             </p>
+            <p>
+              I am currently a Full Stack Application Developer for Zayo Group.
+            </p>
+            <p>
+              I enjoy coding in Java and JavaScript(React), as well as learning new languages
+            </p>
           </div>
-          <div>
+          <div className={styles["thankSection"]}>
             <p className={styles["mediaColor"]}>
               Thank you for visiting my Profile Page
             </p>
