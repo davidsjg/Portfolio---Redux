@@ -24,14 +24,14 @@ function Portfolio() {
     //   class: "{styles[googleBooks]}",
     // },
     {
-      title: "Goldy's Pantry",
+      title: "On The Fly",
       summary:
-        "Website designed to visualize a collection of recipes.  React with Redux and a MongoDB backend.",
-      role: "Developed full MERN stack",
-      tools: "MongoDB, Express, React, Node.js, Redux",
-      github: "https://github.com/davidsjg/DMD-Recipes-App",
-      deployed: "https://goldys-pantry.herokuapp.com/",
-      image: "https://i.imgur.com/oqtTsFF.png",
+        "Website designed to identify a bug seen by/in a river.  React frontend with AWS/Amplify backend.",
+      role: "Developed full stack application",
+      tools: "AWS, Amplify, React",
+      github: "https://github.com/davidsjg/On-The-Fly",
+      deployed: "https://main.d17pi2mwdlbcp6.amplifyapp.com/",
+      image: "https://i.imgur.com/dhz1omK.jpg",
       class: "{styles[googleBooks]}",
     },
     {
@@ -95,12 +95,12 @@ function Portfolio() {
                   {project1.github}
                 </a>
               </p>
-              {/* <p>
+              <p>
                 Deployed:
                 <a href={project1.deployed} target="_blank">
                   {project1.deployed}
                 </a>
-              </p> */}
+              </p>
             </div>
           </div>
           <div className={styles["jpwFinder"]}>
