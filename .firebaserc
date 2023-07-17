@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "jgd-portfolio"
-  }
+    "default": "jgd-portfolio-2",
+    "staging": "jgd-portfolio-2"
+  },
+  "targets": {},
+  "etags": {}
 }
