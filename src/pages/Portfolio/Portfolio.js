@@ -30,7 +30,7 @@ function Portfolio() {
       role: "Developed full stack application",
       tools: "AWS, Amplify, React",
       github: "https://github.com/davidsjg/On-The-Fly",
-      deployed: "https://main.d17pi2mwdlbcp6.amplifyapp.com/",
+      deployed: "https://onthefly-3f238.web.app/",
       image: "https://i.imgur.com/dhz1omK.jpg",
       class: "{styles[googleBooks]}",
     },
@@ -42,7 +42,7 @@ function Portfolio() {
       tools:
         "React, MongoDB, Node.js, Context API, JavaScript, HTML, Bootstrap",
       github: "https://github.com/davidsjg/JPW-Fishing-App",
-      deployed: "https://fathomless-crag-56888.herokuapp.com/",
+      deployed: "coming soon (thanks Heroku)",
       image: "https://i.imgur.com/inj0tje.png",
       class: "jpwFinder",
     },
@@ -53,26 +53,28 @@ function Portfolio() {
       tools:
         "React, Redux, Node.js, MongoDB, Context API, JavaScript, HTML, Bootstrap",
       github: "https://github.com/davidsjg/Beaver-Framing",
-      deployed: "https://beaver-framing.herokuapp.com/",
+      deployed: "coming soon (thanks Heroku)",
       image: "https://i.imgur.com/oqtTsFF.png",
       class: "beaverFrames",
     },
     {
-      tesla: "Tesla Home Page",
-      teslaDeploy: "https://github.com/davidsjg/Tesla-Clone",
-      teslaTools: "React, Redux Toolkit",
-      amazon: "Amazon Home Page, Cart, Login",
-      amazonDeploy: "https://github.com/davidsjg/Amazon-Clone",
-      amazonTools: "React, Firebase Auth",
-      disney: "Disney Home Page",
-      disneyDeploy: "https://github.com/davidsjg/Disney-Clone",
-      disneyTools: "React, React Slick, Redux Toolkit",
-    },
+      title: "Checkers!",
+      summary:
+        "Play some 2-player checkers with a friend(or your alternate ego)!",
+      role: "Project developer",
+      tools:
+        "React, Firebase, Context API, JavaScript, HTML",
+      github: "https://github.com/davidsjg/checkers",
+      deployed: "https://checkers-9976f.web.app/",
+      image: "https://i.imgur.com/wyFfmVO.png",
+      class: "checkers",
+    }
   ];
 
   const project1 = allProjects[0];
   const project2 = allProjects[1];
-  const project3 = allProjects[2];
+  const project3 = allProjects[3];
+  const project4 = allProjects[2];
 
   return (
     <>
@@ -103,6 +105,27 @@ function Portfolio() {
               </p>
             </div>
           </div>
+          <div className={styles["checkers"]}>
+            <div className={styles["checkersData"]}>
+              <p>Title: {project3.title}</p>
+              <p>Summary: {project3.summary}</p>
+              <p>Role: {project3.role}</p>
+              <p>Tools: {project3.tools}</p>
+              <p>
+                Github:
+                <br />
+                <a href={project3.github} target="_blank">
+                  {project3.github}
+                </a>
+              </p>
+              <p>
+                Deployed:
+                <a href={project3.deployed} target="_blank">
+                  {project3.deployed}
+                </a>
+              </p>
+            </div>
+          </div>
           <div className={styles["jpwFinder"]}>
             <div className={styles["jpwData"]}>
               <p>Title: {project2.title}</p>
@@ -116,37 +139,37 @@ function Portfolio() {
                   {project2.github}
                 </a>
               </p>
-              {/* <p>
+              <p>
                 Deployed:
                 <a href={project2.deployed} target="_blank">
                   {project2.deployed}
                 </a>
-              </p> */}
+              </p>
             </div>
           </div>
           <div className={styles["beaverFrames"]}>
             <div className={styles["beaverData"]}>
-              <p>Title: {project3.title}</p>
-              <p>Summary: {project3.summary}</p>
-              <p>Role: {project3.role}</p>
-              <p>Tools: {project3.tools}</p>
+              <p>Title: {project4.title}</p>
+              <p>Summary: {project4.summary}</p>
+              <p>Role: {project4.role}</p>
+              <p>Tools: {project4.tools}</p>
               <p>
                 Github:
                 <br />
-                <a href={project3.github} target="_blank">
-                  {project3.github}
+                <a href={project4.github} target="_blank">
+                  {project4.github}
                 </a>
               </p>
-              {/* <p>
+              <p>
                 Deployed:
-                <a href={project3.deployed} target="_blank">
-                  {project3.deployed}
+                <a href={project4.deployed} target="_blank">
+                  {project4.deployed}
                 </a>
-              </p> */}
+              </p>
             </div>
           </div>
 
-          <PortfolioData project3={allProjects[3]} />
+          {/* <PortfolioData project3={allProjects[3]} /> */}
         </div>
       </Container>
     </>
