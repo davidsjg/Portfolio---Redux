@@ -22,7 +22,7 @@ function About() {
               have interesting designs
             </p>
             <p>
-              I am currently a Full Stack Application Developer for Zayo Group.
+              I am currently a Senior CRM Developer at CircleCI.
             </p>
             <p>
               I enjoy coding in Java and JavaScript(React), as well as learning new languages
